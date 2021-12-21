@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+    <style>
+        .reloj{
+            font-size: 3em;
+            text-align: center;
+            font-family: 'monospace';
+            color: #44f;
+            height: 50vh;
+            animation: mymove 5s infinite;
+        }
+        @keyframes mymove {
+        25%  {color: blue;}
+        50%  {color: yellow;}
+        75%  {color: green;}
+        100% {color: red;}
+        }
+    </style>
+</head>
+<body>
+    <div class="reloj"></div>
+    <script src="index.js"></script>
+</body>
+</html>
