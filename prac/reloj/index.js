@@ -1,13 +1,12 @@
 const relog = document.getElementsByClassName("reloj")[0];
 
 setInterval(()=>{
-    var date = new Date;
-    
-    var hour=date.getHours()-12;
+    let date = new Date;
+    let hour=date.getHours()-12;
     if(hour<10){
         hour=`0${hour}`
     }
-    var minutes=date.getMinutes();
+    let minutes=date.getMinutes();
     if (minutes < 10) {
       minutes = `0${minutes}`;
     }
