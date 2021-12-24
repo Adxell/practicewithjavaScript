@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="info"></div>
+    <script>
+        function loadJson(){
+            let promise = new Promise(resolver=>{
+                setTimeout(()=>{
+                    resolver(json);
+                },5000)
+                let json={
+                    "userId":1,
+                    "id":1,
+                    "title":"delectus aut autem", 
+                    "completed":false,
+                }
+            });
+            promise.then(json=>{
+                jsonLoaded(json);
+            })
+        }
+
+        const jsonLoaded=(json)=>{
+            const showInfo=document.querySelector(".info");
+            showInfo.innerHTML=json.title;
+        }
+        loadJson();
+    </script>
+</body>
+</html>
