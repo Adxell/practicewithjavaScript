@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" contentf="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>COVID-19</h1>
+      <b>Date</b><input id="inputDate" type="date" />
+      <b>country</b>
+      <div class="select"> 
+        <select id="select">
+          <option value="Spain">Spain</option>
+          <option value="Germany">Germany</option>
+        </select>
+        <i></i>
+      </div>
+      <button id="search">Search</button>
+      <ul>
+          <li>today confirmed: <spam id="today_confirmed"></spam></li>
+          <li>today deaths: <spam id="today_deaths"></spam></li>
+          <li>today hospitalised patients with symptoms: <spam id="today_hospitalised_patients_with_symptoms"></spam></li>
+          <li>today intensive care: <spam id="today_intensive_care"></spam></li>
+          <li>today new confirmed:<spam id="today_new_confirmed"></spam></li>
+          <li>today new deaths:<spam id="today_new_deaths"></spam></li>
+          <li>today new intensive care: <spam id="today_new_intensive_care"></spam></li>
+          <li>today new open cases: <spam id="today_new_open_cases"></spam></li>
+          <li>today new recovered: <spam id="today_new_recovered"></spam></li>
+          <li>today recovered: <spam id="today_recovered"></spam></li>
+          <li>today total hospitalised patients: <spam id="today_new_total_hospitalised_patients"></spam></li>
+      </ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

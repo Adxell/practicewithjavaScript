@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 173, 255);
+    width: 60%;
+    text-align: center;
+    justify-self: center;
+    margin:  auto;
+    align-items: center;
+    color: #fff;
+    margin-top: 25vh;
+}
+.container input{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.container .select{
+    width: 50%;
+}
+.container b{
+    margin-bottom: 10px;
+}
+.container .select select{
+    margin-bottom: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+.select{
+    max-width: 50%;
+	position: relative;
+}
+.container .select i{
+    position: absolute;
+	right: 20px;
+	top: calc(50% - 22px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+.container select::-ms-expand {
+    display: none;
+}
+.container button{
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    background-color: rgb(5, 145, 145);
+    border: none;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: rgb(5, 116, 116);
+}
+ul {
+    list-style: none;
+    background-color: rgb(51, 173, 255);
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+ul li{
+    padding: 10px;
+    color: #fff;
+}
