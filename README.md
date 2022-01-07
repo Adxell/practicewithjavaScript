@@ -3,4 +3,4 @@ practicewithjavaScript
 
 Testing my skill with javaScript
 
-© 2021 Adxell Arango
+© 2022 Adxell Arango
