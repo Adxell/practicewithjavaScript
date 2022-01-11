@@ -97,7 +97,7 @@ let friends = [
 ];
 
 let allbooks = friends.reduce(function(previousValue, currentValue){
-    return [...previousValue, ...currentValue.books];
+    return [...previousValue, currentValue.name];
 }, ['Alphabet']);
 
 console.log(allbooks)
