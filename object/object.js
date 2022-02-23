@@ -156,3 +156,79 @@ let q = JSON.parse(s);
 console.log(q)
 
 //Object Methods 
+
+//toString()
+
+let j = {x: 1, y: 1}.toString();
+console.log(j)
+
+//my own method toString()
+
+let point2 ={
+    x: 1, 
+    y: 2, 
+    toString: function(){return `(${this.x}, ${this.y})`;}
+}
+console.log(String(point2));
+
+//toLocaleString()
+
+let point3 = {
+    x: 1000, 
+    y: 2000, 
+    toString: function(){return `(${this.x}, ${this.y})`;
+}, toLocaleString: function(){
+    return `(${this.x.toLocaleString()}, ${this.y.toLocaleString()})`
+}
+}; 
+
+//diference between toStrign and toLocaleString
+
+console.log(point3.toString());
+console.log(point3.toLocaleString()); 
+
+//valueOf()
+
+let point4 = {
+    x: 3, 
+    y: 4, 
+    valueOf: function(){return Math.hypot(this.x, this.y);}
+};
+
+Number(point4);
+
+console.log(point4>4)
+
+//the toJSON()
+
+let point5 = {
+    x: 1, 
+    y: 2, 
+    toString: function(){return `(${this.x}, ${this.y})`;
+}, toJSON: function(){ return this.toString();}
+};
+
+console.log(JSON.stringify([point5]))
+
+//computed property names 
+
+const PORPERTY_NAME = "p1"; 
+function computePropertyName() {return "p"+2; }
+let h = {}; 
+h[PORPERTY_NAME] = 1; 
+h[computePropertyName()] = 2; 
+
+console.log(h)
+
+//with ES6
+
+let e = {
+    [PORPERTY_NAME]: 1, 
+    [computePropertyName()]: 2
+}; 
+
+console.log(e)
+
+
+
+
